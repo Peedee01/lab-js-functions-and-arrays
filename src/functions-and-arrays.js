@@ -60,4 +60,13 @@ function doesWordExist(arr, word) {
   if(arr.length === 0){
     return null
   }
-}
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] === word){
+      return true
+    } 
+  } 
+  return false
+} 
+
+doesWordExist(words2, "machine")
+  
